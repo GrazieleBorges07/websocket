@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial -scale=1.0" />
-        <title>Admin - GBS Sorteio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GBS Sorteio</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="public/assets/css/styles.css" />
+  </head>
 
-        <!-- Estilos -->
-        <link rel="stylesheet" href="public/assets/css/styles.css" />
-    </head>
+  <body class="main">
+    
+    <div id="messageTop" class="message show-message">Prepare-se...</div>
+    <!-- Logo -->
+    <a href="#"
+      ><img
+        id="logo"
+        src="public/assets/images/sorteio.png"
+        alt="GBS Sorteio"
+    /></a>
 
-    <body class="main">
-        <!--  Cabeçalho / Logo -->
-        <header>
-            <a href="#">
-                <img id="logo" src="public/assets/images/loading-icon.png" alt="GBS Sorteio">
-            </a>
-        </header>
-        <!-- Contador de Participantes -->
+    <!-- Mensagem -->
+    <div id="message" class="message"></div>
 
-        <div>Participantes: <span id="clientCount">0</span></div>
-        
-        <!-- Botão de Sorteio -->
-        <div>
-            <button id="draw">Realizar Sorteio</button>
-        </div>
-
-        <!-- Scripts -->
-        <script src="public/js/config.js"></script>
-        <script src="public/js/admin.js"></script>     
-    </body>
+    <!-- Scripts -->
+    <script src="public/js/config.js"></script>
+    <script src="public/js/client.js"></script>
+  </body>
 </html>
